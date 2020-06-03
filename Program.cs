@@ -12,7 +12,11 @@ namespace Fibonacci
         {
             Console.WriteLine("Podaj ilość argumentów: ");
             int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Fibonacci.fibo(a));
+
+            for (int i = 0; i < a; i++)
+            {
+                Console.WriteLine(Fibonacci.fibo(i));
+            }
 
             Console.ReadKey();
         }
